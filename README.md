@@ -16,7 +16,3 @@
 # 支持windows
 
 在windows下使用需要下载[wget for Windows](http://gnuwin32.sourceforge.net/packages/wget.htm) 建议放到一个不包含空格的目录下，例如D:\bin\wget.exe，并修改save.php 中$cmd变量中的wget的调用路径, 例如D:\\bin\\wget.exe
-
-# TODO
-
-抓取gb2312的网页时获取标题有问题，待修复
