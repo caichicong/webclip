@@ -6,7 +6,7 @@
 2. 利用urls.sql初始化数据库
 3. 修改common.php里的数据库配置
 4. 访问index.php, 输入以http开头的网址并提交, 请耐心等待wget抓取网页, 必要时延长webserver的请求时长限制
-5. 访问index.php 时会自动生成静态首页index.html, 利用qrsync就可以上传剪辑好的网页到云储存(参考配置文件webclip.task), 访问 http://yourdomain.qiniudn.com/index.html 即可. 请在common.php的$config变量里修改qiniu_domain参数, qrsync具体用法参考[此链接 ](http://docs.qiniutek.com/v3/tools/qrsync/) 
+5. 访问index.php 时会自动生成静态首页index.html, 利用qrsync就可以上传剪辑好的网页到云储存(参考配置文件webclip.task), 访问 http://yourdomain.qiniudn.com/index.html 即可. qrsync具体用法参考[此链接 ](http://docs.qiniutek.com/v3/tools/qrsync/) 
 
 # 配置
 - 需要在php.ini 中设置safe_mode = Off, 并在disable_functions配置项去除system函数

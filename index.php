@@ -25,7 +25,7 @@ $urls = $stm->fetchAll(PDO::FETCH_ASSOC);
 <?php
 foreach($urls as $url) {
     $static_url = translate_to_static_url($url['url']);
-    printf('<li><a href="http://%s.qiniudn.com/%s" target="_blank">%s</a> %s</li>', $config['qiniu_domain'], $static_url, $url['title'], $url['addtime']);
+    printf('<li><a href="%s" target="_blank">%s</a> %s</li>', $static_url, $url['title'], $url['addtime']);
     printf('<li> http://%s <a href="delete.php?url=%s">del</a> </li>', $url['url'],  $url['url']);
 }
 ?>

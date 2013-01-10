@@ -16,7 +16,6 @@ $config = array(
     'database' => 'webhtml',
     'username' => 'webclip',
     'password' => '123456',
-    'qiniu_domain' => '',
     'proxy' =>  ' -e "http_proxy=http://127.0.0.1:8087/"   ',
     'timeout' => 5,
     'exclude_domain' => array(
