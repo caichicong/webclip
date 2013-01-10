@@ -31,7 +31,7 @@ function html_is_gb2312($static_url) {
     $el = $html->find('meta[http-equiv=Content-Type]', 0);
     if($el) {
         preg_match('/charset=(.+)/', $el->content, $matches);
-        if($matches[1] == 'gb2312') {
+        if(isset($matches[1]) && $matches[1] == 'gb2312') {
             return true;
         }
     }
@@ -40,8 +40,8 @@ function html_is_gb2312($static_url) {
     $el = $html->find('head', 0)->find('meta');
     if($el) {
         foreach($el as $e) {
-            if($e->charset == 'gb2312');
-            return true;
+            if($e->charset == 'gb2312')
+                return true;
         }
     }
 
