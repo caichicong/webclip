@@ -15,4 +15,8 @@
 
 # 支持windows
 
-在windows下使用需要下载[wget for Windows](http://gnuwin32.sourceforge.net/packages/wget.htm) 建议放到一个不包含空格的目录下，例如D:\bin\wget.exe，并修改save.php 中$cmd变量中的wget的调用路径, 例如D:\\bin\\wget.exe
+在windows下使用需要下载[wget for Windows](http://gnuwin32.sourceforge.net/packages/wget.htm) 建议放到一个不包含空格的目录下，例如D:\bin\wget.exe，并修改save.php 中$cmd变量中的wget的调用路径, 例如
+
+```php
+$cmd = sprintf('d:\\bin\\wget.exe %s --exclude-domains %s -t 2 --timeout=%d --user-agent="%s" -E -H -k -K -p -P %s %s',$proxy, implode(',', 		$config['exclude_domain']), $config['timeout'], $agent, dirname(__FILE__), $origin_url );
+```
