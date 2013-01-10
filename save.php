@@ -40,8 +40,8 @@ function html_is_gb2312($static_url) {
     $el = $html->find('head', 0)->find('meta');
     if($el) {
         foreach($el as $e) {
-            if($e->charset == 'gb2312');
-            return true;
+            if($e->charset == 'gb2312')
+                return true;
         }
     }
 
