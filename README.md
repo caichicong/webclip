@@ -20,3 +20,7 @@
 ```php
 $cmd = sprintf('d:\\bin\\wget.exe %s --exclude-domains %s -t 2 --timeout=%d --user-agent="%s" -E -H -k -K -p -P %s %s',$proxy, implode(',', 		$config['exclude_domain']), $config['timeout'], $agent, dirname(__FILE__), $origin_url );
 ```
+
+# TODO
+
+- 正确处理繁体字网页
