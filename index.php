@@ -12,6 +12,7 @@ ob_start();
 <body>
 <form action="save.php" method="post" accept-charset="utf-8">
   请输入http开头的地址 : <input size="70" type="text" name="url" value="">        
+  代理: <input type="checkbox" name="proxy" value="1">
     <input type="submit" value="保存">
 </form>
 <?php
